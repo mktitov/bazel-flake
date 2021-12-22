@@ -13,7 +13,7 @@
   };
 
   outputs = { self, nixpkgs, flake-utils, java, src }:
-    flake-utils.lib.eachSystem [ "x86_64-linux" "x86_64-darwin" ] (
+    flake-utils.lib.eachSystem [ "x86_64-linux" "x86_64-darwin" "aarch64-linux" ] (
       system:
       let
         sources = with builtins; (fromJSON (readFile ./flake.lock)).nodes;
