@@ -5,7 +5,7 @@
     nixpkgs.url = "nixpkgs/nixos-21.11";
     flake-utils.url = "github:numtide/flake-utils";
 
-    java.url = "github:TawasalMessenger/jdk-flake";
+    java.url = "github:mktitov/jdk-flake";
     src = {
       url = "github:bazelbuild/bazel/6.0.0-pre.20211215.3";
       flake = false;
